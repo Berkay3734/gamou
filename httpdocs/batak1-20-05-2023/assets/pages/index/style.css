@@ -1,0 +1,2014 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
+@-webkit-keyframes signup-closing {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+@keyframes signup-closing {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes signin-closing {
+  100% {
+    scale: 0;
+  }
+}
+@keyframes signin-closing {
+  100% {
+    scale: 0;
+  }
+}
+@-webkit-keyframes signin-opening {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes signin-opening {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@-webkit-keyframes signup-opening {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes signup-opening {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes forget-pass-opening {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes forget-pass-opening {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes forget-pass-closing {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@keyframes forget-pass-closing {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+body .container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+body .container .forget-password-form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+body .container .forget-password-form.de-active {
+  display: none;
+}
+body .container .forget-password-form.forget-password-opening {
+  -webkit-animation: forget-pass-opening 0.5s forwards;
+  animation: forget-pass-opening 0.5s forwards;
+}
+body .container .forget-password-form.forget-password-closing {
+  -webkit-animation: forget-pass-closing 0.5s forwards;
+  animation: forget-pass-closing 0.5s forwards;
+}
+body .container .forget-password-form form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #083a1f;
+  padding: 3rem;
+  overflow-y: auto;
+}
+body .container .forget-password-form form #back-to-signin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.8rem 1rem;
+  background: none;
+  border: 0.1rem solid #fff;
+  border-left: none;
+  border-top: none;
+  border-bottom-right-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .container .forget-password-form form #back-to-signin:hover {
+  border-right: 0.1rem solid #ffce61;
+  border-bottom: 0.1rem solid #ffce61;
+}
+body .container .forget-password-form form #back-to-signin:hover i {
+  color: #ffce61;
+}
+body .container .forget-password-form form #back-to-signin:active {
+  scale: 0.8;
+}
+body .container .forget-password-form form #back-to-signin i {
+  pointer-events: none;
+  transition: 0.3s;
+  color: #fff;
+  font-size: 2rem;
+}
+body .container .forget-password-form form .buttons-left,
+body .container .forget-password-form form .buttons-right {
+  display: none;
+}
+body .container .forget-password-form form .logo-1-mobile {
+  display: none;
+}
+body .container .forget-password-form form .form-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+body .container .forget-password-form form .form-tools h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+body .container .forget-password-form form .form-tools .email-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .container .forget-password-form form .form-tools .email-box label {
+  width: 100%;
+  height: 3.5rem;
+  position: relative;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .email-box
+  label
+  .icon-box {
+  width: 3.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .email-box
+  label
+  .icon-box
+  i {
+  padding: 0.4rem;
+  background-color: #ffce61;
+  color: #fff;
+  border-radius: 50%;
+}
+body .container .forget-password-form form .form-tools .email-box label input {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.4rem 0.5rem 3.5rem;
+  font-size: 1rem;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .email-box
+  label
+  input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .email-box
+  label
+  input::-moz-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .email-box
+  label
+  input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body .container .forget-password-form form .form-tools .send-code {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  border: 0.063rem solid #ffce61;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .container .forget-password-form form .form-tools .send-code:hover {
+  background-color: #ffce61;
+}
+body .container .forget-password-form form .form-tools .mobile-links-mobile {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  display: none;
+}
+body .container .forget-password-form form .form-tools .mobile-links-mobile a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover {
+  background-color: #fff;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  svg
+  path {
+  fill: #000;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  .mobile-link-text__top,
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  .mobile-link-text__bottom {
+  color: #000;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  svg {
+  pointer-events: none;
+  width: 2rem;
+  height: 2rem;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  svg
+  path {
+  transition: 0.3s;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text {
+  display: flex;
+  flex-direction: column;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text__top {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+body
+  .container
+  .forget-password-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text__bottom {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.58);
+}
+body .container .forget-password-form form .logo-2-mobile {
+  display: none;
+}
+body .container .signin-form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  transition: 0.3s;
+}
+body .container .signin-form.de-active {
+  display: none;
+}
+body .container .signin-form.signin-opening {
+  -webkit-animation: signin-opening 0.5s forwards;
+  animation: signin-opening 0.5s forwards;
+}
+body .container .signin-form.signin-closing {
+  -webkit-animation: signin-closing 0.5s forwards;
+  animation: signin-closing 0.5s forwards;
+}
+body .container .signin-form form {
+  width: 100%;
+  height: 100%;
+  background-color: #083a1f;
+  padding: 3rem;
+  overflow-y: auto;
+}
+body .container .signin-form form .buttons-left,
+body .container .signin-form form .buttons-right {
+  display: none;
+}
+body .container .signin-form form .logo-1-mobile {
+  display: none;
+}
+body .container .signin-form form .form-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .container .signin-form form .form-tools h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+body .container .signin-form form .form-tools .signin-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .container .signin-form form .form-tools .signin-inputs label {
+  width: 100%;
+  height: 3.5rem;
+  position: relative;
+}
+body .container .signin-form form .form-tools .signin-inputs label .icon-box {
+  width: 3.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .signin-form form .form-tools .signin-inputs label .icon-box i {
+  padding: 0.4rem;
+  background-color: #ffce61;
+  color: #fff;
+  border-radius: 50%;
+}
+body .container .signin-form form .form-tools .signin-inputs label input {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  padding: 0.5rem 0.4rem 0.5rem 3.5rem;
+  font-size: 1rem;
+  /* ------yaptigim deisikler------------------------------------------------------------------------------- */
+  background-color: inherit;
+  border: 0.5px solid #ffce61;
+}
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .signin-inputs
+  label
+  input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .signin-inputs
+  label
+  input::-moz-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .signin-inputs
+  label
+  input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  /* color: white; */
+}
+body .container .signin-form form .form-tools .forget-password {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+body .container .signin-form form .form-tools .forget-password a {
+  text-decoration: none;
+  color: #ffce61;
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+body .container .signin-form form .form-tools .forget-password a:hover {
+  text-decoration: underline;
+}
+body .container .signin-form form .form-tools #submit {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  border: 0.063rem solid #ffce61;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+/* -------------yapdigim deisikler--------------------------------------------- */
+body .container .signin-form form .form-tools #submit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 10px;
+  background-color: #f7a00c;
+  z-index: -1;
+  border-radius: 10px;
+  transition: 1.2s ease-in-out;
+}
+
+/* -------------yapdigim deisikler--------------------------------------------- */
+body .container .signin-form form .form-tools #submit:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background-color: #f7a00c;
+  z-index: -1;
+}
+body .container .signin-form form .form-tools .choose-room {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  border: 0.063rem solid #ffce61;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+/* -------------yapdigim deisikler--------------------------------------------- */
+
+body .container .signin-form form .form-tools .choose-room::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 10px;
+  background-color: #f7a00c;
+  z-index: -1;
+  border-radius: 10px;
+  transition: 1.2s ease-in-out;
+}
+
+/* -------------yapdigim deisikler--------------------------------------------- */
+body .container .signin-form form .form-tools .choose-room:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background-color: #f7a00c;
+  z-index: -1;
+}
+body .container .signin-form form .form-tools .newcomer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* -------------yapdigim deisikler--------------------------------------------- */
+body .container .signin-form form .form-tools .newcomer button {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  border: 0.063rem solid #ffce61;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+body .container .signin-form form .form-tools .newcomer button:hover {
+  background-color: red;
+}
+/* -------------yapdigim deisikler--------------------------------------------- */
+/* body .container .signin-form form .form-tools .newcomer .be-member::after  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background-color: #F7A00C ;
+  z-index: -1;
+  
+} */
+/* body .container .signin-form form .form-tools .newcomer .be-member:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background-color: #F7A00C;
+  z-index: -1;
+} */
+body .container .signin-form form .form-tools .mobile-links-mobile {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  display: none;
+}
+body .container .signin-form form .form-tools .mobile-links-mobile a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+body .container .signin-form form .form-tools .mobile-links-mobile a:hover {
+  background-color: #fff;
+}
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  svg
+  path {
+  fill: #000;
+}
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  .mobile-link-text__top,
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  .mobile-link-text__bottom {
+  color: #000;
+}
+body .container .signin-form form .form-tools .mobile-links-mobile a svg {
+  pointer-events: none;
+  width: 2rem;
+  height: 2rem;
+}
+body .container .signin-form form .form-tools .mobile-links-mobile a svg path {
+  transition: 0.3s;
+}
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text {
+  display: flex;
+  flex-direction: column;
+}
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text__top {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+body
+  .container
+  .signin-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text__bottom {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.58);
+}
+body .container .signin-form form .logo-2-mobile {
+  display: none;
+}
+body .container .signup-form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  transition: 0.3s;
+}
+body .container .signup-form.de-active {
+  display: none;
+}
+body .container .signup-form.signup-opening {
+  -webkit-animation: signup-opening 0.5s forwards;
+  animation: signup-opening 0.5s forwards;
+}
+body .container .signup-form.signup-closing {
+  -webkit-animation: signup-closing 0.5s forwards;
+  animation: signup-closing 0.5s forwards;
+}
+body .container .signup-form form {
+  width: 100%;
+  height: 70%;
+  background-color: #083a1f;
+  padding: 3rem;
+  overflow-y: auto;
+}
+body .container .signup-form form .buttons-left,
+body .container .signup-form form .buttons-right {
+  display: none;
+}
+body .container .signup-form form .logo-1-mobile {
+  display: none;
+}
+body .container .signup-form form .form-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .container .signup-form form .form-tools h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+body .container .signup-form form .form-tools .signup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .container .signup-form form .form-tools .signup-inputs label {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #676666;
+  outline: none;
+  width: 100%;
+  height: 3.5rem;
+  position: relative;
+}
+body .container .signup-form form .form-tools .signup-inputs label .icon-box {
+  width: 3.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .signup-form form .form-tools .signup-inputs label .icon-box i {
+  padding: 0.4rem;
+  background-color: #ffce61;
+  color: #fff;
+  border-radius: 50%;
+}
+body .container .signup-form form .form-tools .signup-inputs label input,
+body .container .signup-form form .form-tools .signup-inputs label select {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.4rem 0.5rem 3.5rem;
+  font-size: 1rem;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .signup-inputs
+  label
+  input:-ms-input-placeholder,
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .signup-inputs
+  label
+  select:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .signup-inputs
+  label
+  input::-moz-placeholder,
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .signup-inputs
+  label
+  select::-moz-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .signup-inputs
+  label
+  input::placeholder,
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .signup-inputs
+  label
+  select::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body .container .signup-form form .form-tools .signup-inputs label select {
+  color: #676666;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .signup-inputs
+  label
+  select
+  option {
+  height: 1rem;
+}
+body .container .signup-form form .form-tools .have-account {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+body .container .signup-form form .form-tools .have-account a {
+  text-decoration: none;
+  color: #ffce61;
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+body .container .signup-form form .form-tools .have-account a:hover {
+  text-decoration: underline;
+}
+/* body .container .signup-form form .form-tools .newcomer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+} */
+/* body .container .signup-form form .form-tools .newcomer button {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  border: 0.063rem solid #FFCE61;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+/* body .container .signup-form form .form-tools .newcomer button:hover {
+  background-color: #FFCE61;
+} */
+body .container .signup-form form .form-tools .mobile-links-mobile {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  display: none;
+}
+body .container .signup-form form .form-tools .mobile-links-mobile a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+body .container .signup-form form .form-tools .mobile-links-mobile a:hover {
+  background-color: #fff;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  svg
+  path {
+  fill: #000;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  .mobile-link-text__top,
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a:hover
+  .mobile-link-text__bottom {
+  color: #000;
+}
+body .container .signup-form form .form-tools .mobile-links-mobile a svg {
+  pointer-events: none;
+  width: 2rem;
+  height: 2rem;
+}
+body .container .signup-form form .form-tools .mobile-links-mobile a svg path {
+  transition: 0.3s;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text {
+  display: flex;
+  flex-direction: column;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text__top {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+body
+  .container
+  .signup-form
+  form
+  .form-tools
+  .mobile-links-mobile
+  a
+  .mobile-link-text__bottom {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.58);
+}
+body .container .signup-form form .logo-2-mobile {
+  display: none;
+}
+body .container .logo-area {
+  position: relative;
+  background-image: url(../../../assets/images/bg\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+body .container .logo-area .buttons-left,
+body .container .logo-area .buttons-right {
+  position: absolute;
+  top: 0;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+body .container .logo-area .buttons-left button,
+body .container .logo-area .buttons-right button {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  /* background-color: #000; */
+  cursor: pointer;
+  transition: 0.3s;
+  /* ------yaptigim deisikler------------------------------------------------------------------------------- */
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(4, 159, 108) 0%,
+    rgb(194, 254, 113) 90.1%
+  );
+  color: white;
+  border-radius: 15px;
+  height: 50px;
+  box-shadow: 0 5px 7px rgb(194, 254, 113);
+}
+body .container .logo-area .buttons-left button:hover,
+body .container .logo-area .buttons-right button:hover {
+  /* background-color: white;
+  color: #000; */
+  /* ------yaptigim deisikler------------------------------------------------------------------------------- */
+  transform: scaleY(1.2);
+  color: black;
+}
+body .container .logo-area .buttons-left {
+  left: 1rem;
+}
+body .container .logo-area .buttons-right {
+  right: 1rem;
+}
+body .container .logo-area .logo-1-desktop {
+  display: flex;
+  justify-content: center;
+}
+body .container .logo-area .logo-1-desktop img {
+  /* width: 30rem; */
+  height: 20rem;
+  /* ------yaptigim deisikler------------------------------------------------------------------------------- */
+  width: 25rem;
+}
+body .container .logo-area .description {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+body .container .logo-area .description p {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 49rem;
+  /* color: #FFCE61; */
+  /* ------yaptigim deisikler------------------------------------------------------------------------------- */
+  color: white;
+  font-weight: bold;
+}
+body .container .logo-area .mobile-links-desktop {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+body .container .logo-area .mobile-links-desktop a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.5rem;
+  /* background-color: #000; */
+  color: white;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: 0.3s;
+  /* ------yaptigim deisikler------------------------------------------------------------------------------- */
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(4, 159, 108) 0%,
+    rgb(194, 254, 113) 90.1%
+  );
+  box-shadow: 4px 2px 2px rgb(194, 254, 113);
+}
+body .container .logo-area .mobile-links-desktop a:hover {
+  background-color: #fff;
+}
+body .container .logo-area .mobile-links-desktop a:hover svg path {
+  fill: #000;
+}
+body .container .logo-area .mobile-links-desktop a:hover .mobile-link-text__top,
+body
+  .container
+  .logo-area
+  .mobile-links-desktop
+  a:hover
+  .mobile-link-text__bottom {
+  color: #000;
+}
+body .container .logo-area .mobile-links-desktop a svg {
+  pointer-events: none;
+  width: 2rem;
+  height: 2rem;
+}
+body .container .logo-area .mobile-links-desktop a svg path {
+  transition: 0.3s;
+}
+body .container .logo-area .mobile-links-desktop a .mobile-link-text {
+  display: flex;
+  flex-direction: column;
+}
+body .container .logo-area .mobile-links-desktop a .mobile-link-text__top {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+body .container .logo-area .mobile-links-desktop a .mobile-link-text__bottom {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.58);
+}
+body .container .logo-area .logo-2-desktop {
+  display: flex;
+  justify-content: center;
+}
+body .container .logo-area .logo-2-desktop img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1480px) {
+  :root {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1290px) {
+  :root {
+    font-size: 13px;
+  }
+  body .container .logo-area .description p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  :root {
+    font-size: 12px;
+  }
+  body .container .logo-area .description p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1125px) {
+  body .container .logo-area .buttons-left {
+    left: 0;
+    padding: 0;
+  }
+  body .container .logo-area .buttons-right {
+    right: 0;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  body .container .logo-area .buttons-left,
+  body .container .logo-area .buttons-right {
+    gap: 0.3rem;
+  }
+  body .container .logo-area .buttons-left button,
+  body .container .logo-area .buttons-right button {
+    padding: 0.6rem 0.7rem;
+  }
+  body .container .logo-area {
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 940px) {
+  :root {
+    font-size: 11px;
+  }
+  body .container .logo-area .logo-1-desktop img {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 830px) {
+  :root {
+    font-size: 10px;
+  }
+  body .container .logo-area .buttons-left,
+  body .container .logo-area .buttons-right {
+    gap: 1rem;
+  }
+  body .container .logo-area .buttons-left button,
+  body .container .logo-area .buttons-right button {
+    padding: 0.8rem 1rem;
+  }
+  body .container .logo-area .mobile-links-desktop {
+    display: none;
+  }
+  body .container .signup-form form .form-tools .mobile-links-mobile,
+  body .container .signin-form form .form-tools .mobile-links-mobile,
+  body .container .forget-password-form form .form-tools .mobile-links-mobile {
+    display: flex;
+  }
+  body .container .logo-area .logo-2-desktop {
+    display: none;
+  }
+  body .container .signup-form form .logo-2-mobile,
+  body .container .signin-form form .logo-2-mobile,
+  body .container .forget-password-form form .logo-2-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  body .container .signup-form form .logo-2-mobile img,
+  body .container .signin-form form .logo-2-mobile img,
+  body .container .forget-password-form form .logo-2-mobile img {
+    width: 100%;
+  }
+  body .container .signup-form form,
+  body .container .signin-form form,
+  body .container .forget-password-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 3rem 0 3rem;
+  }
+  body .container .logo-area {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 790px) {
+  :root {
+    font-size: 9px;
+  }
+  body .container .signup-form form .logo-2-mobile,
+  body .container .signin-form form .logo-2-mobile,
+  body .container .forget-password-form form .logo-2-mobile {
+    margin-top: 1.5rem;
+  }
+  body .container .logo-area .logo-1-desktop {
+    display: none;
+  }
+  body .container .signup-form form .logo-1-mobile,
+  body .container .signin-form form .logo-1-mobile,
+  body .container .forget-password-form form .logo-1-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  body .container .signup-form form .logo-1-mobile img,
+  body .container .signin-form form .logo-1-mobile img,
+  body .container .forget-password-form form .logo-1-mobile img {
+    width: 30rem;
+    height: 20rem;
+  }
+  body .container .signup-form form .logo-1-mobile img,
+  body .container .signin-form form .logo-1-mobile img,
+  body .container .forget-password-form form .logo-1-mobile img {
+    width: 20rem;
+    height: 12rem;
+  }
+  body .container .logo-area .description {
+    display: none;
+  }
+  body .container .signup-form form,
+  body .container .signin-form form,
+  body .container .forget-password-form form {
+    position: relative;
+    padding: 0 3rem;
+  }
+  body .container .signup-form form .buttons-left,
+  body .container .signup-form form .buttons-right,
+  body .container .signin-form form .buttons-left,
+  body .container .signin-form form .buttons-right,
+  body .container .forget-password-form form .buttons-left,
+  body .container .forget-password-form form .buttons-right {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+  }
+  body .container .signup-form form .buttons-left button,
+  body .container .signup-form form .buttons-right button,
+  body .container .signin-form form .buttons-left button,
+  body .container .signin-form form .buttons-right button,
+  body .container .forget-password-form form .buttons-left button,
+  body .container .forget-password-form form .buttons-right button {
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0.6rem 1rem;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  body .container .signup-form form .buttons-left button:hover,
+  body .container .signup-form form .buttons-right button:hover,
+  body .container .signin-form form .buttons-left button:hover,
+  body .container .signin-form form .buttons-right button:hover,
+  body .container .forget-password-form form .buttons-left button:hover,
+  body .container .forget-password-form form .buttons-right button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  body .container .signup-form form .buttons-left,
+  body .container .signin-form form .buttons-left,
+  body .container .forget-password-form form .buttons-left {
+    left: 0;
+  }
+  body .container .signup-form form .buttons-right,
+  body .container .signin-form form .buttons-right,
+  body .container .forget-password-form form .buttons-right {
+    right: 0;
+  }
+  body .container .forget-password-form form .buttons-left,
+  body .container .forget-password-form form .buttons-right {
+    top: 10rem;
+  }
+  body .container .logo-area {
+    display: none;
+  }
+  body .container .signup-form,
+  body .container .signin-form,
+  body .container .forget-password-form {
+    width: 100%;
+  }
+  body .container .signup-form form .form-tools .newcomer,
+  body .container .signin-form form .form-tools .newcomer {
+    flex-direction: row;
+  }
+  body .container .signup-form form .form-tools .newcomer button,
+  body .container .signin-form form .form-tools .newcomer button {
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 590px) {
+  body .container .signup-form form .buttons-left,
+  body .container .signup-form form .buttons-right,
+  body .container .signin-form form .buttons-left,
+  body .container .signin-form form .buttons-right,
+  body .container .forget-password-form form .buttons-left,
+  body .container .forget-password-form form .buttons-right {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  :root {
+    font-size: 8px;
+  }
+  body .container .signup-form form .buttons-left,
+  body .container .signup-form form .buttons-right,
+  body .container .signin-form form .buttons-left,
+  body .container .signin-form form .buttons-right {
+    padding: 0;
+  }
+  body .container .signup-form form .buttons-left button,
+  body .container .signup-form form .buttons-right button,
+  body .container .signin-form form .buttons-left button,
+  body .container .signin-form form .buttons-right button {
+    padding: 0.6rem 0.6rem;
+  }
+}
+@media only screen and (max-width: 365px) {
+  body .container .signup-form form .buttons-left button,
+  body .container .signup-form form .buttons-right button,
+  body .container .signin-form form .buttons-left button,
+  body .container .signin-form form .buttons-right button {
+    padding: 0.5rem 0.4rem;
+  }
+}
+@media only screen and (max-width: 305px) {
+  body .container .signup-form form .buttons-left button,
+  body .container .signup-form form .buttons-right button,
+  body .container .signin-form form .buttons-left button,
+  body .container .signin-form form .buttons-right button {
+    padding: 0.3rem 0.1rem;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 290px) {
+  :root {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 260px) {
+  :root {
+    font-size: 6px;
+  }
+}
+@media only screen and (max-height: 670px) {
+  body .container .logo-area .logo-1-desktop img {
+    width: 25rem;
+    height: 16rem;
+  }
+}
+@media only screen and (max-height: 640px) {
+  body .container .signup-form form .form-tools .newcomer {
+    flex-direction: row;
+  }
+  body .container .signup-form form .form-tools .newcomer button {
+    flex: 1;
+  }
+}
+@media only screen and (max-height: 610px) {
+  body .container .logo-area .logo-2-desktop img {
+    height: 15rem;
+  }
+}
+@media only screen and (max-height: 590px) {
+  body .container .logo-area .logo-2-desktop img {
+    width: 90%;
+    height: auto;
+  }
+}
+@media only screen and (max-height: 580px) {
+  body .container .logo-area .logo-1-desktop img {
+    width: 20rem;
+    height: 12rem;
+  }
+  body .container .logo-area .logo-2-desktop img {
+    width: 85%;
+    height: auto;
+  }
+}
+@media only screen and (max-height: 520px) {
+  body .container .logo-area .logo-1-desktop img {
+    width: 18rem;
+    height: 10rem;
+  }
+  body .container .logo-area .logo-2-desktop img {
+    width: 80%;
+  }
+}
+@media only screen and (max-height: 475px) {
+  body .container .logo-area .logo-1-desktop img {
+    width: 14rem;
+    height: auto;
+  }
+  body .container .logo-area .logo-2-desktop img {
+    width: auto;
+    height: 10rem;
+  }
+}
+@media only screen and (max-height: 475px) {
+  body .container .logo-area .logo-1-desktop img {
+    width: 10rem;
+  }
+  body .container .logo-area .logo-2-desktop img {
+    height: 6rem;
+  }
+} /*# sourceMappingURL=style.css.map */
+
+.hall-section {
+  background: linear-gradient(
+    147.18deg,
+    #18422a 10.2%,
+    #06622f 25.91%,
+    #08622f 55.86%,
+    #07612e 78.28%,
+    #054128 97.76%
+  );
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+.hall-section .hall-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hall-section .hall-container header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.hall-section .hall-container header h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+}
+.hall-section .hall-container header button {
+  background: none;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+}
+.hall-section .hall-container header button:hover {
+  color: #ffce61;
+}
+.hall-section .hall-container header button:active {
+  scale: 0.8;
+}
+.hall-section .hall-container .hall-table-box table {
+  width: 100%;
+}
+.hall-section .hall-container .hall-table-box table thead {
+  width: 100%;
+}
+.hall-section .hall-container .hall-table-box table thead tr {
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.hall-section .hall-container .hall-table-box table thead tr th {
+  flex: 1;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.hall-section .hall-container .hall-table-box table thead tr th img {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.hall-section
+  .hall-container
+  .hall-table-box
+  table
+  thead
+  tr
+  th:not(:first-child) {
+  padding-right: 1.5rem;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+.hall-section .hall-container .hall-table-box table tbody {
+  width: 100%;
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+.hall-section .hall-container .hall-table-box table tbody tr {
+  transition: 0.2s;
+  background-color: #052b16;
+  display: flex;
+  padding-left: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  cursor: pointer;
+}
+.hall-section .hall-container .hall-table-box table tbody tr td {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.hall-section .hall-container .hall-table-box table tbody tr td img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.hall-section
+  .hall-container
+  .hall-table-box
+  table
+  tbody
+  tr
+  td:not(:first-child) {
+  padding-right: 1.5rem;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+.hall-section .hall-container .hall-table-box table tbody tr:hover {
+  background-color: #02190c;
+}
+.hall-section .hall-container .hall-table-box table tbody tr.active {
+  background: linear-gradient(180deg, #f7e097 0%, #f7a00c 100%);
+}
+.hall-section .hall-container .hall-table-box table tbody tr.active td {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #052b16;
+}
+
+.reklamAlani {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* ------yaptigim deisikler------------------------------------------------------------------------------- */
+  background-color: inherit;
+}
+
+.reklamAlani .reklam-box {
+  width: 80%;
+  height: 80%;
+  /* background-color: #aaa; */
+  font-size: 1.5rem;
+  /* color: black; */
+  padding: 1rem;
+  /* ------yaptigim deisikler------------------------------------------------------------------------------- */
+  background-color: inherit;
+  border: 0.5px solid #ffce61;
+  box-shadow: 2px 4px 7px rgb(194, 254, 113);
+  border-radius: 13px;
+  color: white;
+}
+input#kuladi {
+  color: white;
+}
+input#sifre {
+  color: white;
+}
+.signup-form {
+  background-color: #083a1f;
+}
+@import "https://fonts.googleapis.com/css?family=Roboto:300,500,700";
+
+button.btnSubmit {
+  outline: none;
+  border: none;
+  cursor: default;
+  transition: box-shadow 300ms ease;
+  letter-spacing: 2px;
+  box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.2);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  box-sizing: border-box;
+  width: 175px;
+  height: 50px;
+  border-radius: 35px;
+  border: 2px solid;
+  border-color: #1ecd97;
+  background: none;
+  color: #1ecd97;
+  transition: all 300ms ease-out;
+  /* position: absolute;
+  top: 75%;
+  left: 4%; */
+}
+button.btnSubmit:hover {
+  cursor: pointer;
+  font-size: 1.05em;
+  border-color: transparent;
+  background: #1ecd97;
+  color: #fafafa;
+}
+button.btnSubmit.clicked {
+  pointer-events: none;
+  -webkit-animation: anim1 200ms cubic-bezier(0.2, 0, 0.8, 1),
+    anim2 300ms cubic-bezier(0.6, 0, 0.7, 1) 300ms 1 forwards;
+  animation: anim1 200ms cubic-bezier(0.2, 0, 0.8, 1),
+    anim2 300ms cubic-bezier(0.6, 0, 0.7, 1) 300ms 1 forwards;
+}
+
+button.btnSubmit.clicked.done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  background: #1ecd97;
+  background: linear-gradient(0, #1ecd97, #25dfa6);
+  border-width: 0;
+  border-color: rgba(30, 205, 151, 0);
+  color: rgba(30, 205, 151, 0);
+  transition: all 1000ms ease;
+  -webkit-animation: anim4 300ms cubic-bezier(0.2, 0, 0.4, 1) forwards;
+  animation: anim4 300ms cubic-bezier(0.2, 0, 0.4, 1) forwards;
+}
+svg.svg--template {
+  display: none;
+}
+
+svg.loader {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  overflow: visible;
+}
+
+svg.loader {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 50px;
+  height: 50px;
+}
+svg.checkmark {
+  height: 1.2em;
+  width: 100%;
+}
+svg .circle1 {
+  stroke: #1ecd97;
+  stroke-width: 3px;
+  r: 23.5px;
+  cx: 25px;
+  cy: 25px;
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 157px;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  -webkit-animation: animLoading 2500ms cubic-bezier(0.6, 0, 0, 1);
+  animation: animLoading 2500ms cubic-bezier(0.6, 0, 0, 1);
+}
+svg .checkmark1 {
+  fill: #fafafa;
+}
+svg .checkmark1 .line1 {
+  transform-origin: 100% 100%;
+}
+svg .checkmark1 .line2 {
+  transform-origin: 0% 100%;
+}
+svg .checkmark1 .line1,
+svg .checkmark1 .line2 {
+  -webkit-animation: growAndRotate 500ms cubic-bezier(0.4, 0, 0, 1);
+  animation: growAndRotate 500ms cubic-bezier(0.4, 0, 0, 1);
+}
+
+@-webkit-keyframes anim1 {
+  0% {
+    font-size: 1.05em;
+  }
+  50% {
+    font-size: 0.9em;
+  }
+  100% {
+    font-size: 1.05emj;
+  }
+}
+
+@keyframes anim1 {
+  0% {
+    font-size: 1.05em;
+  }
+  50% {
+    font-size: 0.9em;
+  }
+  100% {
+    font-size: 1.05emj;
+  }
+}
+@-webkit-keyframes anim2 {
+  40% {
+    border-radius: 35px;
+  }
+  20%,
+  100% {
+    color: rgba(30, 205, 151, 0);
+  }
+  100% {
+    background: none;
+    border-width: 2px;
+    border-color: #c5c5c5;
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+  }
+}
+@keyframes anim2 {
+  40% {
+    border-radius: 35px;
+  }
+  20%,
+  100% {
+    color: rgba(30, 205, 151, 0);
+  }
+  100% {
+    background: none;
+    border-width: 2px;
+    border-color: #c5c5c5;
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+  }
+}
+@-webkit-keyframes animLoading {
+  0% {
+    stroke-dashoffset: 157px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animLoading {
+  0% {
+    stroke-dashoffset: 157px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes anim4 {
+  0% {
+    border-radius: 50%;
+    width: 50px;
+  }
+  40% {
+    border-radius: 35px;
+  }
+  100% {
+    width: 175px;
+  }
+}
+@keyframes anim4 {
+  0% {
+    border-radius: 50%;
+    width: 50px;
+  }
+  40% {
+    border-radius: 35px;
+  }
+  100% {
+    width: 175px;
+  }
+}
+@-webkit-keyframes growAndRotate {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) rotate(-5deg);
+  }
+  30%,
+  100% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+@keyframes growAndRotate {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) rotate(-5deg);
+  }
+  30%,
+  100% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}

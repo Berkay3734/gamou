@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Dizirix</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home-body">
+            <div class="top-body">
+                <div class="header">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                            <img src="./assets/images/plus.png" alt="hamburger">
+                        </div>
+                        <ul class="menu-links" id="menu-links">
+                            <li><a href="index.html">ANASAYFA</a></li>
+                            <li><a href="movies.html">FİLMLER</a></li>
+                            <li><a href="series.html">DİZİLER</a></li>
+                            <li><a href="animes.html">ANİMELER</a></li>
+                            <li><a href="mylist.html">LİSTEM</a></li>
+                            <li><button class="butons" onclick="showLoginUser()">GİRİŞ YAP</button></li>
+                            <li><button class="butons">KAYIT OL</button></li>
+                        </ul>
+                    </div>
+                    <div class="text-pages">
+                       <div class="header-text"><a href="index.html">ANASAYFA</a></div> 
+                       <div class="header-text"><a href="movies.html">FİLMLER</a></div> 
+                       <div class="header-text"><a href="series.html">DİZİLER</a></div> 
+                       <div class="header-text"><a href="animes.html">ANİMELER</a></div> 
+                       <div class="header-text"><a href="mylist.html">LİSTEM</a></div> 
+                    </div>
+                    <div class="login-register-user">
+                        <img src="./assets/images/eclipse.png" alt="search">
+                        <p style="padding-left: 10px; padding-right: 10px; color: white; font-size: 20px;">kullanici adi</p>
+                        <img style="cursor: pointer;" src="./assets/images/down.png">
+                    </div>
+                    <div class="login-register">
+                        <img src="./assets/images/search.png" alt="search">
+                        <button class="butons" onclick="showLoginUser()">GİRİŞ YAP</button>
+                        <button class="butons">KAYIT OL</button>
+                    </div>
+                </div>
+                <section>
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            
+                            <div id="slide-1" class="slide" style="background-image: url('./assets/images/inception.png');">
+                                <div class="watch-point">
+                                    <div class="watch"><a>INCEPTION</a></div>
+                                    <div class="point-desc">
+                                        <img style="width: 20px; height: 20px;" src="./assets/images/star.png">
+                                        <p>8.8 | Aksiyon | Bilim Kurgu</p>
+                                    </div>
+                                    <div class="options">
+                                        <button class="playbtn"><img style="width: 20px; height: 20px;" src="./assets/images/play.png">
+                                            <p style="width: 20%;">İzle</p>
+                                        </button>
+                                        <button class="addbtn"><img style="width: 20px; height: 20px;" src="./assets/images/plus.png">
+                                            <p>Listeye Ekle</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="slide-2" class="slide"
+                                style="background-image: url('https://images.unsplash.com/photo-1657586640569-4a3d4577328c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80');">
+                                <div class="watch-point">
+                                    <div class="watch"><a>WORLD ONE</a></div>
+                                    <div class="point-desc">
+                                        <img style="width: 20px; height: 20px;" src="./assets/images/star.png">
+                                        <p>8.8 | Aksiyon | Bilim Kurgu</p>
+                                    </div>
+                                    <div class="options">
+                                        <button class="playbtn"><img style="width: 20px; height: 20px;" src="./assets/images/play.png">
+                                            <p style="width: 20%;">İzle</p>
+                                        </button>
+                                        <button class="addbtn"><img style="width: 20px; height: 20px;" src="./assets/images/plus.png">
+                                            <p>Listeye Ekle</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="slide-3" class="slide"
+                                style="background-image: url('https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80');">
+                                <div class="watch-point">
+                                    <div class="watch"><a>WORLD TWO</a></div>
+                                    <div class="point-desc">
+                                        <img style="width: 20px; height: 20px;" src="./assets/images/star.png">
+                                        <p>8.8 | Aksiyon | Bilim Kurgu</p>
+                                    </div>
+                                    <div class="options">
+                                        <button class="playbtn"><img style="width: 20px; height: 20px;" src="./assets/images/play.png">
+                                            <p style="width: 20%;">İzle</p>
+                                        </button>
+                                        <button class="addbtn"><img style="width: 20px; height: 20px;" src="./assets/images/plus.png">
+                                            <p>Listeye Ekle</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="slide-4" class="slide" style="background-image: url('https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80');">
+                            <div class="watch-point">
+                                <div class="watch"><a>WORLD THREE</a></div>
+                                <div class="point-desc">
+                                    <img style="width: 20px; height: 20px;" src="./assets/images/star.png">
+                                    <p>8.8 | Aksiyon | Bilim Kurgu</p>
+                                </div>
+                                <div class="options">
+                                    <button class="playbtn"><img style="width: 20px; height: 20px;" src="./assets/images/play.png">
+                                        <p style="width: 20%;">İzle</p>
+                                    </button>
+                                    <button class="addbtn"><img style="width: 20px; height: 20px;" src="./assets/images/plus.png">
+                                        <p>Listeye Ekle</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <a id="resim-1" href="#slide-1"></a>
+                            <a id="resim-2" href="#slide-2"></a>
+                            <a id="resim-3" href="#slide-3"></a>
+                            <a id="resim-4" href="#slide-4"></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="last-added">
+                <div class="last-added-part"><p>En Son Eklenen Bölümler</p><a>Tümüne Göz At <img src="./assets/images/right.png"></a></div>
+                <div class="part-lists">
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title"><p>La Casa De Papel</p></div>
+                            <div class="part-season"><p>4.Sezon 5.Bölüm</p></div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-list-desc">
+                        <div class="part-picture">
+                            <img src="./assets/images/lacasa.png" alt="">
+                        </div>
+                        <div class="part-desc">
+                            <div class="part-title">
+                                <p>La Casa De Papel</p>
+                            </div>
+                            <div class="part-season">
+                                <p>4.Sezon 5.Bölüm</p>
+                            </div>
+                            <div class="part-country-day">
+                                <img src="./assets/images/england.png" alt="">
+                                <img src="./assets/images/turkey.png" alt="">
+                                <p>2 gün önce</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="series">
+                <div class="series-part"><p>Diziler</p><a>Tümüne Göz At <img src="./assets/images/right.png"></a></div>
+                <div class="series-lists">
+                    <div class="series-picture">
+                        <img src="./assets/images/transformers.png" alt="">
+                        <div class="series-desc">
+                            <div class="series-title-year"><p>Transformers</p></div>
+                            <div class="series-title-year"><p>2023</p></div>
+                        </div>
+                        <div class="series-star">
+                            <img src="./assets/images/saat.png" alt="">
+                            <p>126min</p>
+                            <img style="padding-left: 20%;" src="./assets/images/star.png" alt="">
+                            <p style="padding-right: 60%;">7.0</p>
+                        </div>
+                    </div>
+                    <div class="series-picture">
+                        <img src="./assets/images/transformers.png" alt="">
+                        <div class="series-desc">
+                            <div class="series-title-year">
+                                <p>Transformers</p>
+                            </div>
+                            <div class="series-title-year">
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="series-star">
+                            <img src="./assets/images/saat.png" alt="">
+                            <p>126min</p>
+                            <img style="padding-left: 20%;" src="./assets/images/star.png" alt="">
+                            <p style="padding-right: 60%;">7.0</p>
+                        </div>
+                    </div>
+                    <div class="series-picture">
+                        <img src="./assets/images/transformers.png" alt="">
+                        <div class="series-desc">
+                            <div class="series-title-year">
+                                <p>Transformers</p>
+                            </div>
+                            <div class="series-title-year">
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="series-star">
+                            <img src="./assets/images/saat.png" alt="">
+                            <p>126min</p>
+                            <img style="padding-left: 20%;" src="./assets/images/star.png" alt="">
+                            <p style="padding-right: 60%;">7.0</p>
+                        </div>
+                    </div>
+                    <div class="series-picture">
+                        <img src="./assets/images/transformers.png" alt="">
+                        <div class="series-desc">
+                            <div class="series-title-year">
+                                <p>Transformers</p>
+                            </div>
+                            <div class="series-title-year">
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="series-star">
+                            <img src="./assets/images/saat.png" alt="">
+                            <p>126min</p>
+                            <img style="padding-left: 20%;" src="./assets/images/star.png" alt="">
+                            <p style="padding-right: 60%;">7.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movies">
+                <div class="series-part">
+                    <p>Filmler</p><a>Tümüne Göz At <img src="./assets/images/right.png"></a> 
+                </div>
+                <div class="series-lists">
+                    <div class="series-picture">
+                        <img src="./assets/images/transformers.png" alt="">
+                        <div class="series-desc">
+                            <div class="series-title-year">
+                                <p>Transformers</p>
+                            </div>
+                            <div class="series-title-year">
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="series-star">
+                            <img src="./assets/images/saat.png" alt="">
+                            <p>126min</p>
+                            <img style="padding-left: 20%;" src="./assets/images/star.png" alt="">
+                            <p style="padding-right: 60%;">7.0</p>
+                        </div>
+                    </div>
+                    <div class="series-picture">
+                        <img src="./assets/images/transformers.png" alt="">
+                        <div class="series-desc">
+                            <div class="series-title-year">
+                                <p>Transformers</p>
+                            </div>
+                            <div class="series-title-year">
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="series-star">
+                            <img src="./assets/images/saat.png" alt="">
+                            <p>126min</p>
+                            <img style="padding-left: 20%;" src="./assets/images/star.png" alt="">
+                            <p style="padding-right: 60%;">7.0</p>
+                        </div>
+                    </div>
+                    <div class="series-picture">
+                        <img src="./assets/images/transformers.png" alt="">
+                        <div class="series-desc">
+                            <div class="series-title-year">
+                                <p>Transformers</p>
+                            </div>
+                            <div class="series-title-year">
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="series-star">
+                            <img src="./assets/images/saat.png" alt="">
+                            <p>126min</p>
+                            <img style="padding-left: 20%;" src="./assets/images/star.png" alt="">
+                            <p style="padding-right: 60%;">7.0</p>
+                        </div>
+                    </div>
+                    <div class="series-picture">
+                        <img src="./assets/images/transformers.png" alt="">
+                        <div class="series-desc">
+                            <div class="series-title-year">
+                                <p>Transformers</p>
+                            </div>
+                            <div class="series-title-year">
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="series-star">
+                            <img src="./assets/images/saat.png" alt="">
+                            <p>126min</p>
+                            <img style="padding-left: 20%;" src="./assets/images/star.png" alt="">
+                            <p style="padding-right: 60%;">7.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="platforms">
+                <img src="./assets/images/netflix.png" alt="">
+                <img src="./assets/images/disney.png" alt="">
+                <img src="./assets/images/blutv.png" alt="">
+                <img src="./assets/images/exxen.png" alt="">
+                <img src="./assets/images/primevideo.png" alt="">
+                <img src="./assets/images/mubi.png" alt="">
+                <img src="./assets/images/hbo.png" alt="">
+            </div>
+            <div class="footer">
+                <div class="footer-top">
+                    <img src="./assets/images/logo.png" alt="">
+                    <div class="footer-texts">
+                        <div class="footer-text"><a href="index.html">ANASAYFA</a></div>
+                        <div class="footer-text"><a href="movies.html">FİLMLER</a></div>
+                        <div class="footer-text"><a href="series.html">DİZİLER</a></div>
+                        <div class="footer-text"><a href="mylist.html">LİSTEM</a></div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>GİZLİLİK VE GÜVENLİK POLİTİKASI</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bottom-text"><p>©2023.Tüm Hakları Saklıdır</p></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+                var menuLinks = document.getElementById("menu-links");
+                menuLinks.classList.toggle("show");
+            }
+    </script>
+    <script>
+       function showLoginUser() {
+            var loginRegister = document.querySelector('.login-register');
+           var loginRegisterUser = document.querySelector('.login-register-user');
+
+            loginRegister.classList.add('login-register-active');
+            loginRegisterUser.classList.add('login-register-user-active');
+        }
+    </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const slides = document.querySelectorAll('.slider .slide');
+        const sliderNavLinks = document.querySelectorAll('.slider-nav a');
+        let currentSlide = 0;
+        let slideInterval;
+
+        // Function to change the slide
+        function changeSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                    sliderNavLinks[i].classList.add('active');
+                } else {
+                    slide.style.display = 'none';
+                    sliderNavLinks[i].classList.remove('active');
+                }
+            });
+        }
+
+        // Function to handle slide transition
+        function handleSlideTransition() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            changeSlide(currentSlide);
+        }
+
+        // Change slide on click
+        sliderNavLinks.forEach((link, index) => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                currentSlide = index;
+                changeSlide(currentSlide);
+                clearInterval(slideInterval); // Clear the previous interval
+                slideInterval = setInterval(handleSlideTransition, 10000); // Start a new interval
+            });
+        });
+
+        // Start the initial interval
+        slideInterval = setInterval(handleSlideTransition, 10000);
+    });
+</script>
+</body>
+</html>

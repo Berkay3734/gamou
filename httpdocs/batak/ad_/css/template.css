@@ -1,0 +1,580 @@
+body{
+    margin: auto;
+}
+.zemin {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 160px;
+  margin-top: 160px;
+  border: 1px solid #EEE;
+}
+.kimyapti {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 11px;
+  color: gray;
+}
+.login {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
+  z-index: 1;
+}
+.login ul{
+    list-style: none;
+    float: left;
+    width: 100%;
+    height: 36px;
+    margin: 0px auto;
+    padding: 0px;
+    margin-top: 3px;
+}
+.login ul li{
+    list-style: none;
+    float: left;
+    width: 50%;
+    height: 30px;
+    margin: 0px auto;
+    padding: 0px;
+    font-family: arial;
+    font-size: 14px;
+}
+.login ul li input[type="text"]{
+    padding: 8px;
+    width: 120px;
+    border: 1px solid #DDD;
+}
+.login ul li input[type="password"]{
+    padding: 8px;
+    width: 120px;
+    border: 1px solid #DDD;
+}
+.login ul li input[type="submit"]{
+    padding-left: 18px;padding-right: 18px;padding-top: 4px;padding-bottom: 4px;cursor: pointer;
+}
+.maxmenu a{
+    text-decoration: none;
+    color: black;
+}
+.load {
+  display: none;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
+  z-index: 2;
+  text-align: center;
+  font-family: arial;
+  font-size: 14px;
+}
+.load img{
+    width: 50px;
+}
+.ifade{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background: #EEE;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 32px;
+}
+/*-----------------ADMİNİSTRATOR TEMPLATE-------------------*/
+.minimenu{
+    position: absolute;
+    width: 50px;
+    min-height: 600px;
+    height: 100%;
+    background: #DDD;
+    background-image: url('../img/t1.png');
+    background-size: 100px 100%;
+}
+.maxmenu{
+    position: absolute;
+    width: 220px;
+    min-height: 600px;
+    margin-left: 50px;
+    height: 100%;
+    background: #EAEAEA;
+}
+.saha{
+    position: absolute;
+    width: calc(100% - 270px);
+    min-height: 600px;
+    min-width: 600px;
+    margin-left: 270px;
+    height: 100%;
+    background: #F5F5F5;
+}
+.nerede{
+    width: 195px;
+    height: 30px;
+    font-family: arial;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 11px;
+    font-weight: bold;
+    border-bottom: 1px solid #CCC;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.altmenu{
+    border-top: 1px solid white;
+    margin-left: 10px;
+    width: 200px;
+    height: 500px;
+}
+.altmenu ul{
+    list-style: none;
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin: 0px auto;
+    padding: 0px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+.altmenu ul:hover{
+    background: #F1F1F1;
+}
+.altmenu ul li{
+    list-style: none;
+    float: left;
+    margin: 0px auto;
+    padding: 0px;
+    font-family: arial;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.siralama{
+    width: calc(98% - 2%);
+    height: 29px;
+    margin-left: 2%;
+    border-bottom: 1px solid #EAEAEA;
+    padding-top: 9px;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 0px;
+}
+.baslik{
+    width: calc(98% - 2%);
+    height: 29px;
+    margin-left: 2%;
+    border-bottom: 1px solid #EAEAEA;
+    padding-top: 9px;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.profil{
+    width: calc(98% - 2%);
+    height: 210px;
+    margin-left: 2%;
+    border-bottom: 1px solid #EAEAEA;
+    padding-top: 9px;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.profilresim{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #EAEAEA;
+}
+.profilbilgileri{
+    position: absolute;
+    width: calc(100% - 250px);
+    height: 200px;
+    margin-left: 210px;
+}
+.profilbilgileri ul{
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 1px;
+    height: 30px;
+    border-bottom: 1px dashed #EAEAEA;
+}
+.profilbilgileri ul li{
+    list-style: none;
+    float: left;
+    margin: 0px;
+    height: 30px;
+    padding: 0px;
+    padding-top: 5px;
+    font-family: arial;
+    font-size: 14px;
+}
+.ara{
+    position: absolute;
+    right: 2%;
+}
+.ara input[type="text"]{
+    padding: 2px;
+    font-family: arial;
+    font-size: 12px;
+    width: 170px;
+    padding-left: 10px;
+}
+.liste{
+    width: calc(98% - 2%);
+    margin-left: 2%;
+    padding-top: 9px;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.liste ul{
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+}
+.liste ul li{
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 10.5%;
+    height: 85px;
+    margin-left: 0.5%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.liste ul a{
+    color: black;
+    text-decoration: none;
+}
+.liste ul li:hover{
+    background: #EEE;
+}
+.sayfalama{
+    width: calc(98% - 2%);
+    height: 29px;
+    margin-left: 2%;
+    padding-top: 9px;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.sayfalama li{
+    list-style: none;
+    float: left;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+    width: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: arial;
+    font-size: 14px;
+    margin-left: 4px;
+}
+.sayfalama li:hover{
+    background: #EAEAEA;
+}
+.sayfalama a{
+    text-decoration: none;
+    color: black;
+}
+.aktif{
+    background: white;
+}
+.resim{
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;
+}
+.isim{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+    background: #EAEAEA;
+    text-align: center;
+    font-family: verdana;
+    font-size: 12px;
+    padding-top: 2px;padding-bottom: 2px;border-bottom: 1px solid #CECECE;
+}
+.siralamatipi{
+    position: absolute;
+}
+.siralamatipi a{
+    color: black;
+    text-decoration: none;font-weight: bold;font-size: 12px;
+}
+.sifirla{
+    width: 80px;
+    text-align: center;
+    background: gray;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 3px;color: white;font-size: 12px;
+}
+.guncelle{
+    margin-top: 10px;cursor: pointer;font-size: 12px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 4px;padding-bottom: 4px;background: white;border: 1px solid #EAEAEA;
+}
+.guncelle:hover{
+    border: 1px solid yellowgreen;
+}
+.paketguncelle{
+    margin-top: 10px;cursor: pointer;font-size: 12px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 4px;padding-bottom: 4px;background: white;border: 1px solid #EAEAEA;
+}
+.paketguncelle:hover{
+    border: 1px solid yellowgreen;
+}
+.salonkaydet{
+    margin-top: 10px;cursor: pointer;font-size: 12px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 4px;padding-bottom: 4px;background: white;border: 1px solid #EAEAEA;
+}
+.salonkaydet:hover{
+    border: 1px solid yellowgreen;
+}
+.botkaydet{
+    margin-top: 10px;cursor: pointer;font-size: 12px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 4px;padding-bottom: 4px;background: white;border: 1px solid #EAEAEA;
+}
+.botkaydet:hover{
+    border: 1px solid yellowgreen;
+}
+.kredikaydet{
+    margin-top: 10px;cursor: pointer;font-size: 12px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 4px;padding-bottom: 4px;background: white;border: 1px solid #EAEAEA;
+}
+.kredikaydet:hover{
+    border: 1px solid yellowgreen;
+}
+.salonguncelle{
+    margin-top: 10px;cursor: pointer;font-size: 12px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 4px;padding-bottom: 4px;background: white;border: 1px solid #EAEAEA;
+}
+.salonguncelle:hover{
+    border: 1px solid yellowgreen;
+}
+.yeni{
+    position: absolute;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: yellowgreen;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+    color: white;
+}
+.sil{
+    margin-left: 10px;margin-top: 10px;cursor: pointer;font-size: 12px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 4px;padding-bottom: 4px;background: white;border: 1px solid #EAEAEA;
+}
+.sil:hover{
+    border: 1px solid crimson;
+}
+.ban{
+    margin-left: 10px;margin-top: 10px;cursor: pointer;font-size: 12px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 4px;padding-bottom: 4px;color: white;background: crimson;border: 1px solid #EAEAEA;
+}
+.ban:hover{
+    border: 1px solid crimson;
+}
+.banli{
+    position: absolute;
+    width: 50px;
+    height: 34px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px double crimson;
+    color: crimson;
+    padding-top: 16px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+    box-shadow: 0px 0px 2px red;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+.uzunliste{
+    width: calc(98% - 2%);
+    margin-left: 2%;
+    padding-top: 9px;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.uzunliste ul{
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+}
+.uzunliste ul li{
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    background: white;
+    height: 32px;
+    margin-top: 1px;
+}
+.islemyap{
+    position: absolute;
+    right: 2%;
+    width: 108px;
+    height: 21px;
+    margin-top: 3px;
+}
+.islemyap a{
+    color: black;text-decoration: none;
+}
+.onayla{
+    float: left;
+    width: 50px;
+    height: 19px;
+    background: yellowgreen;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    padding-top: 5px;color: white;
+    cursor: pointer;
+}
+.red{
+    float: left;
+    width: 50px;
+    height: 19px;
+    background: crimson;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    padding-top: 5px;color: white;
+    cursor: pointer;
+}
+.silici{
+    float: left;
+    width: 50px;
+    height: 19px;
+    background: crimson;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    padding-top: 5px;color: white;
+    cursor: pointer;
+}
+.bildirisilici{
+    float: left;
+    width: 50px;
+    height: 19px;
+    background: crimson;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    padding-top: 5px;color: white;
+    cursor: pointer;
+}
+.sikayetsilici{
+    float: left;
+    width: 50px;
+    height: 19px;
+    background: crimson;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    padding-top: 5px;color: white;
+    cursor: pointer;
+}
+.paketsilici{
+    float: left;
+    width: 50px;
+    height: 19px;
+    background: crimson;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    padding-top: 5px;color: white;
+    cursor: pointer;
+}
+.listeid{
+    float: left;
+    font-family: arial;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 8px;
+    padding-left: 4px;padding-right: 4px;
+}
+.listebloksmol{
+    float: left;
+    width: 16%;
+    height: 15px;
+    margin-top: 8px;
+    margin-left: 1%;
+    font-family: arial;
+    font-size: 12px;
+}
+.listeblokmedium{
+    float: left;
+    width: 28%;
+    height: 15px;
+    margin-top: 8px;
+    margin-left: 0.5%;
+    font-family: arial;
+    font-size: 12px;
+}
+.kapla{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+.kredidetay{
+    margin: 0px auto;
+    width: 300px;
+    height: 100px;
+    background: white;
+    margin-top: 10%;
+    font-family: arial;
+    font-size: 16px;
+    text-align: center;
+    padding: 50px;
+}
+.kredidetay input[type="text"]{
+    padding: 8px;
+    width: 100px;text-align: center;
+}
+.yukle{
+    margin: 0px auto;
+    background: yellowgreen;
+    color: white;
+    text-align: center;
+    width: 100px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    cursor: pointer;float: left;
+    margin-left: 50px;
+}
+.iptal{
+    margin: 0px auto;
+    background: orangered;
+    color: white;
+    text-align: center;
+    width: 100px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    cursor: pointer;float: left;margin-left: 10px;
+}

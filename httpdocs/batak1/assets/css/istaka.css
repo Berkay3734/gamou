@@ -1,0 +1,576 @@
+#istaka {
+  position: relative;
+  max-width: 100%;
+  /* width: 90%; */
+  height: 170px;
+  padding: 6px 0 6px 0;
+  z-index: 300;
+  border-radius: 1rem;
+  transform: translate(0, -150px);
+  /* background: linear-gradient(180deg, #E98F1A 0%, #834A04 100%); */
+}
+
+/* Ahmet Düzenledi */
+/*#taslar {*/
+/*  position: absolute;*/
+/*  width: 103%;*/
+/*  height: 100%;*/
+/*  margin-left: 3.1%;*/
+/*  margin-top: -2px;*/
+/*  height: 135px;*/
+/*}*/
+#taslar {
+  position: absolute;
+  width: 107%;
+  height: 100%;
+  margin-left: 1.2%;
+  margin-top: 12px;
+  height: 135px;
+}
+
+
+
+
+#taslar>ul {
+  border-radius: 4px;
+  list-style: none;
+  float: left;
+  width: 6.9%;
+  height: 46%;
+  margin: 0px auto;
+  padding: 1px;
+  margin-left: 0.1%;
+  margin-top: 1px;
+}
+
+#taslar>ul>img {
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+
+/* Ahmet Düzenledi */
+/*.gamePlay__board {*/
+/*  width: 100% !important;*/
+/*  max-width: 880px;*/
+/*  position: relative;*/
+/*}*/
+.gamePlay__board {
+  /* width: 100% !important; */
+  max-width: 880px;
+  position: relative;
+}
+
+
+
+.gamePlay__board img {
+  max-width: 100%;
+}
+
+.sirabende {
+  color: red;
+}
+
+@media (max-width: 1200px) {
+  .gamePlay__board {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gamePlay__board {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gamePlay__board {
+    max-width: 560px;
+  }
+
+  #istaka {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gamePlay__board {
+    max-width: 460px;
+  }
+
+  #istaka {
+    height: 80px;
+  }
+}
+
+.opponent-box.sandalyesira.active,
+.sandalyesira.active .opponent-box {
+  border: 0.1rem solid red !important;
+}
+
+.yer {
+  position: relative;
+  z-index: 2;
+}
+
+.yer>img {
+  position: absolute;
+}
+
+.ui-draggable {}
+
+.tasaktif {
+  position: absolute;
+  display: none;
+  width: 75px;
+  height: 79px;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#tasgonder {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.2);
+  border: solid red;
+  width: 2.7rem;
+  height: 3.5rem;
+  display: block;
+}
+
+.tasyeri>img {
+  display: block;
+  margin: 0 auto;
+}
+
+#yerdencek img {
+  border-radius: 4px;
+  position: absolute !important;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.yerdencekici2 {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#yerdencekici {
+  border: .25rem solid rgba(255, 0, 0, 0.3);
+  z-index: 990;
+  border-radius: 4px;
+  width: calc(43px + .5rem);
+  height: calc(57px + .5rem);
+  position: absolute;
+}
+
+#yerdencek {
+  width: calc(43px + .5rem);
+  height: calc(57px + .5rem);
+  border-radius: 4px;
+  background: url(../../img/tasbg.png);
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: .25rem solid transparent;
+}
+
+#yerdencekalt {
+  width: calc(43px + .5rem);
+  height: calc(57px + .5rem);
+  border-radius: 4px;
+}
+
+#yerdencek img {
+  border-radius: 4px;
+}
+
+#kontrolcu {
+  /* display: none; */
+  position: absolute;
+  /* margin-left: 40px; */
+  border: .25rem solid rgba(255, 0, 0, 0.3);
+  /* z-index: 990; */
+  border-radius: 4px;
+  width: 4.7rem;
+  height: 5.5rem;
+}
+
+#kontrolcu img {
+  /*border-radius: 4px;*/
+  /*border: .25rem solid transparent;*/
+  /* width: calc(2.6875rem + 8px); */
+  /* height: calc(3.5625rem + 8px); */
+  width: 4.7rem;
+  height: 5.5rem;
+}
+
+#bitir img {
+  border-radius: 4px;
+  border: .25rem solid transparent;
+  /* width: calc(2.6875rem + 8px); */
+  /* height: calc(3.5625rem + 8px); */
+  width: 4.7rem;
+  height: 5.5rem;
+}
+
+.tascekmeDiv {
+  position: relative;
+}
+
+.tascekmeDiv #yerdencekalt,
+.tascekmeDiv #yerdencek,
+.tascekmeDiv #yerdencekici {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.tascekmeDiv #yerdencekalt {
+  z-index: 1;
+}
+
+.kontrolEt {
+  position: relative;
+  margin-left: 55px;
+}
+
+.kontrolEt #bitir,
+.kontrolEt #kontrolcu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.kalantas {
+  min-width: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  background-color: #999;
+  color: #000;
+  font-size: 1.2rem;
+  border-radius: .7rem;
+  padding: .5rem;
+  opacity: .5;
+}
+
+
+
+
+.inviteEt {
+  display: none;
+}
+
+.inviteEt.active {
+  display: block;
+}
+
+.inviteEt .inviteshadow {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 28rem;
+  height: 100%;
+  z-index: 996;
+}
+
+.inviteBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 28rem;
+  background-color: #052B16;
+  z-index: 999;
+}
+
+.inviteBox .header {
+  background-color: #083A1F;
+  padding: 1rem;
+}
+
+.inviteBox .header .title {
+  display: flex;
+  justify-content: space-between;
+  color: #FFCE61;
+  font-size: 2.5rem;
+}
+
+.inviteBox .header .title img {
+  cursor: pointer;
+}
+
+.inviteBox .header .hall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFCE61;
+  font-size: 1.2rem;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.inviteBox .header .hall>* {
+  cursor: pointer;
+}
+
+.inviteBox .header .hall .salondakiler.active {
+  background-color: #FFCE61;
+  color: #000;
+  font-weight: 700;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+
+.inviteBox .header .hall .arkadaslar.active {
+  background-color: #FFCE61;
+  color: #000;
+  font-weight: 700;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+
+.inviteBox .body {
+  width: 100%;
+  max-height: 80vh;
+  min-height: 80vh;
+  overflow-y: scroll;
+}
+
+.inviteBox .body::-webkit-scrollbar-track {
+  background-color: #052b16;
+  border-radius: 0.7rem;
+}
+
+.inviteBox .body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.inviteBox .body::-webkit-scrollbar-thumb {
+  border-radius: 0.7rem;
+  background-color: #e6b424;
+}
+
+.inviteBox .body .salonBody,
+.inviteBox .body .arkadasBody {
+  display: none;
+}
+
+.inviteBox .body .salonBody .person,
+.inviteBox .body .arkadasBody .person {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 1px solid white;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inviteBox .body .salonBody .person:nth-last-child(1),
+.inviteBox .body .arkadasBody .person:nth-last-child(1) {
+  border: none;
+}
+
+.inviteBox .body .salonBody .person .title,
+.inviteBox .body .arkadasBody .person .title {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.inviteBox .body .salonBody .person .title img,
+.inviteBox .body .arkadasBody .person .title img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.inviteBox .body .salonBody .person .title .nameBox,
+.inviteBox .body .arkadasBody .person .title .nameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inviteBox .body .salonBody .person .title .nameBox .name,
+.inviteBox .body .arkadasBody .person .title .nameBox .name {
+  color: #FFF;
+  font-size: 1.5rem;
+}
+
+.inviteBox .body .salonBody .person .title .nameBox .puan,
+.inviteBox .body .arkadasBody .person .title .nameBox .puan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inviteBox .body .salonBody .person .title .nameBox .puan img,
+.inviteBox .body .arkadasBody .person .title .nameBox .puan img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.inviteBox .body .salonBody .person .title .nameBox .puan span,
+.inviteBox .body .arkadasBody .person .title .nameBox .puan span {
+  color: #FFCE61;
+}
+
+.inviteBox .body .salonBody .person .inviteHim button,
+.inviteBox .body .arkadasBody .person .inviteHim button {
+  background: linear-gradient(180deg, #FFCE61 0%, #B98000 100%);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.7rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.inviteBox .body .salonBody.active {
+  display: block;
+}
+
+.inviteBox .body .arkadasBody.active {
+  display: block;
+}
+
+.puantablosu {
+  background-image: url("../images/bg1.png");
+  width: 34rem;
+  padding: 2.5rem 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.puantablosu .table {
+  background-color: #011D0E;
+  justify-content: center;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+}
+
+.puantablosu .table .player {
+  width: 25%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.puantablosu .table .player.active img {
+  border: 2px solid orange;
+}
+
+.puantablosu .table .player img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.puantablosu .table .player>p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.puantablosu .table .player .scores {
+  margin-top: 0.5rem;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.puantablosu .table .player .scores.even>.score {
+  background-color: #052B16;
+}
+
+.puantablosu .table .player .scores.odd>.score {
+  background-color: #18422A;
+}
+
+.puantablosu .table .player .scores .score {
+  text-align: center;
+}
+
+.puantablosu .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.puantablosu .buttons button {
+  border-radius: 0.7rem;
+  border: 0.1rem solid wheat;
+  cursor: pointer;
+  color: #FFCE61;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: linear-gradient(168.51deg, rgba(41, 110, 55, 0.86) 58.79%, rgba(27, 84, 41, 0) 92.44%);
+}
+
+.d-none {
+  display: none !important;
+}
+
+#messageButton {
+  /* position: absolute; */
+  /* right: 1.5%; */
+  /* top: 20.5%; */
+  z-index: 150;
+  display: none
+}
+
+#messageButton img {
+  max-width: 45px;
+  width: 45px;
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  #messageButton {
+    /* position: absolute; */
+    /* right: 1.5%; */
+    /* top: 7%; */
+    display: block;
+    /* margin: 0 auto; */
+  }
+
+  body main .gameBody-section__middle .chatting {
+    /* display: none; */
+    /* position: absolute !important; */
+    /* left: 76% !important; */
+    
+  }
+
+#taslar {
+  transform: translate(0px,12px);
+}
+
+  
+}
+
+.db {
+  display: block !important;
+}

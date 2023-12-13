@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/series.css">
+    <title>Dizirix</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="home-body">
+            <div class="top-body">
+                <div class="header">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="text-pages">
+                        <div class="header-text"><a href="index.html">ANASAYFA</a></div>
+                        <div class="header-text"><a href="movies.html">FİLMLER</a></div>
+                        <div class="header-text"><a href="series.html">DİZİLER</a></div>
+                        <div class="header-text"><a href="animes.html">ANİMELER</a></div>
+                        <div class="header-text"><a href="mylist.html">LİSTEM</a></div>
+                    </div>
+                    <div class="login-register">
+                        <img src="./assets/images/search.png" alt="search">
+                        <button class="butons">GİRİŞ YAP</button>
+                        <button class="butons">KAYIT OL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="last-added">
+                <div class="last-added-part">
+                    <p>Filmler</p>
+                </div>
+                <div class="part-lists">
+                    <div class="filters">
+                        <div class="dropdown">
+                            <button class="search-button">Tüm Kategoriler</button>
+                            <div class="dropdown-content">
+                                <a href="#">Seçenek 1</a>
+                                <a href="#">Seçenek 2</a>
+                                <a href="#">Seçenek 3</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="search-button">Tüm Ülkeler</button>
+                            <div class="dropdown-content">
+                                <a href="#">Seçenek 4</a>
+                                <a href="#">Seçenek 5</a>
+                                <a href="#">Seçenek 6</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="search-button">Tüm Diller</button>
+                            <div class="dropdown-content">
+                                <a href="#">Seçenek 7</a>
+                                <a href="#">Seçenek 8</a>
+                                <a href="#">Seçenek 9</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="search-button">En Yeniler</button>
+                            <div class="dropdown-content">
+                                <a href="#">Seçenek 10</a>
+                                <a href="#">Seçenek 11</a>
+                                <a href="#">Seçenek 12</a>
+                            </div>
+                        </div>
+
+                        <div class="search-input">
+                            <input type="text" id="search-input" placeholder="Dizi ara" oninput="filterPictures()">
+                        </div>
+                    </div>
+                    <div class="series-picture">
+                        <a href="#"><img src="./assets/images/film.png" alt="film1"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film2"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film3"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film4"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film5"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film6"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film7"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film8"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film9"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film10"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film11"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film12"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film13"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film14"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film15"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film16"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film17"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film18"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film19"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film20"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film21"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film22"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film23"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film24"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film25"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film26"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film27"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film28"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film29"></a>
+                        <a href="#"><img src="./assets/images/film.png" alt="film30"></a>
+                    </div>
+                </div>
+                <div class="load-more"><button id="load-more-btn">Daha Fazla Yükle</button></div>
+                <div class="footer">
+                    <div class="footer-top">
+                        <img src="./assets/images/logo.png" alt="">
+                        <div class="footer-texts">
+                            <div class="footer-text"><a href="index.html">ANASAYFA</a></div>
+                            <div class="footer-text"><a href="movies.html">FİLMLER</a></div>
+                            <div class="footer-text"><a href="series.html">DİZİLER</a></div>
+                            <div class="footer-text"><a href="mylist.html">LİSTEM</a></div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>GİZLİLİK VE GÜVENLİK POLİTİKASI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bottom-text">
+                    <p>©2023.Tüm Hakları Saklıdır</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function filterPictures() {
+            var input = document.getElementById("search-input").value.toLowerCase();
+            var images = document.getElementsByClassName("series-picture")[0].getElementsByTagName("img");
+
+            for (var i = 0; i < images.length; i++) {
+                var alt = images[i].getAttribute("alt").toLowerCase();
+                var parentLink = images[i].parentNode;
+
+                if (alt.includes(input)) {
+                    parentLink.style.display = "inline-block";
+                } else {
+                    parentLink.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

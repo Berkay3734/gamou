@@ -1,0 +1,126 @@
+.topkart #bir {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.topkart #iki {
+  -webkit-animation: slide-right 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.topkart #uc {
+  -webkit-animation: slide-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.topkart #dort {
+  -webkit-animation: slide-right 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.topkart #bes {
+  -webkit-animation: slide-right 2.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 2.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.mykart #bir {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.mykart #iki {
+  -webkit-animation: slide-right 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.mykart #uc {
+  -webkit-animation: slide-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.mykart #dort {
+  -webkit-animation: slide-right 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.mykart #bes {
+  -webkit-animation: slide-right 2.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 2.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.leftkart #bir {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.leftkart #iki {
+  -webkit-animation: slide-right 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.leftkart #uc {
+  -webkit-animation: slide-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.leftkart #dort {
+  -webkit-animation: slide-right 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.leftkart #bes {
+  -webkit-animation: slide-right 2.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 2.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.rightkart #bir {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.rightkart #iki {
+  -webkit-animation: slide-right 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.rightkart #uc {
+  -webkit-animation: slide-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.rightkart #dort {
+  -webkit-animation: slide-right 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.rightkart #bes {
+  -webkit-animation: slide-right 2.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: slide-right 2.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.notablegame.move {
+  right: 30%;
+}
+.tablegame.move {
+  left: 30%;
+}
+.newgame.move {
+  opacity: 0;
+  pointer-events: none;
+}
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  60% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(-1000px);
+  }
+  60% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}

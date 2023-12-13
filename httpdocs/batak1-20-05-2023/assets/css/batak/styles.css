@@ -1,0 +1,451 @@
+.game {
+  width: 100%;
+  height: 100vh;
+  background: url(../../../img/arkaplanrengi.png) no-repeat center center
+    fixed;
+}
+.tahta {
+  width: 99%;
+  height: 100vh;
+  background: url(../../../img/tables.png) no-repeat center center fixed;
+  background-size: 80%;
+}
+.tahtasiz {
+  width: 99%;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: space-between;
+}
+.top-left {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hamburger {
+  width: 10%;
+  height: 70%;
+  border: 1px solid white;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cizgi {
+  width: 80%;
+  height: 5%;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.yorum {
+  width: 10%;
+  height: 70%;
+  border: 1px solid white;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yorum > img {
+  width: 80%;
+}
+.para-hedef {
+  width: 30%;
+  height: 40%;
+  border: 1px solid white;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.para-hedef > img {
+  width: 50%;
+}
+.top-right {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gold {
+  width: 30%;
+  height: 45%;
+  border: 1px solid white;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.gold > img {
+  width: 100%;
+}
+.tour {
+  width: 20%;
+  height: 70%;
+  border: 1px solid white;
+  background-color: #1d1d1d;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+}
+.defter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 60%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.topkart {
+  width: 100%;
+  display: flex;
+}
+.topkart > img {
+  width: 4%;
+}
+.topkart #bir {
+  position: absolute;
+  top: 25%;
+  left: 44%;
+}
+.topkart #iki {
+  position: absolute;
+  top: 25%;
+  left: 46%;
+}
+.topkart #uc {
+  position: absolute;
+  top: 25%;
+  left: 48%;
+}
+.topkart #dort {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+.topkart #bes {
+  position: absolute;
+  top: 25%;
+  left: 52%;
+}
+.leftkart > img {
+  width: 6%;
+}
+.leftkart #bir {
+  position: absolute;
+  top: 38%;
+  left: 22%;
+}
+.leftkart #iki {
+  position: absolute;
+  top: 42%;
+  left: 22%;
+}
+.leftkart #uc {
+  position: absolute;
+  top: 46%;
+  left: 22%;
+}
+.leftkart #dort {
+  position: absolute;
+  top: 50%;
+  left: 22%;
+}
+.leftkart #bes {
+  position: absolute;
+  top: 54%;
+  left: 22%;
+}
+
+.rightkart > img {
+  width: 6%;
+}
+.rightkart #bir {
+  position: absolute;
+  top: 38%;
+  right: 22%;
+}
+.rightkart #iki {
+  position: absolute;
+  top: 42%;
+  right: 22%;
+}
+.rightkart #uc {
+  position: absolute;
+  top: 46%;
+  right: 22%;
+}
+.rightkart #dort {
+  position: absolute;
+  top: 50%;
+  right: 22%;
+}
+.rightkart #bes {
+  position: absolute;
+  top: 54%;
+  right: 22%;
+}
+.mykart {
+  display: flex;
+}
+.mykart > img {
+  width: 6%;
+}
+.mykart #bir {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+}
+.mykart #iki {
+  position: absolute;
+  top: 75%;
+  left: 43%;
+}
+.mykart #uc {
+  position: absolute;
+  top: 75%;
+  left: 46%;
+}
+.mykart #dort {
+  position: absolute;
+  top: 75%;
+  left: 49%;
+}
+.mykart #bes {
+  position: absolute;
+  top: 75%;
+  left: 52%;
+}
+.player-one > img {
+  width: 13%;
+  position: absolute;
+  top: 6%;
+  left: 43%;
+  z-index: 1;
+}
+.player-two > img {
+  width: 11%;
+  position: absolute;
+  top: 39%;
+  left: 13%;
+  z-index: 1;
+}
+.player-three > img {
+  width: 15%;
+  position: absolute;
+  top: 35%;
+  right: 13%;
+  z-index: 1;
+}
+.player-four > img {
+  width: 9%;
+  position: absolute;
+  bottom: 0%;
+  left: 44%;
+  z-index: 1;
+}
+.blackpoint {
+  width: 7%;
+  height: 5%;
+  border-radius: 20px;
+  background-color: #1d1d1d;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.player-one > .blackpoint {
+  position: absolute;
+  top: 25%;
+  left: 46%;
+}
+.player-two > .blackpoint {
+  position: absolute;
+  top: 55%;
+  left: 19%;
+}
+.player-three > .blackpoint {
+  position: absolute;
+  top: 55%;
+  right: 20%;
+}
+.player-four > .blackpoint {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+.koz {
+  display: flex;
+  position: absolute;
+  top: 65%;
+  left: 30%;
+}
+.koz img {
+  width: 85%;
+}
+.kozlar img {
+  display: flex;
+  position: absolute;
+  top: 67%;
+  left: 31%;
+  width: 2%;
+}
+#sinek {
+  display: none;
+}
+#karo {
+  display: none;
+}
+#kupa {
+  display: none;
+}
+#maca {
+  display: none;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 30%;
+  height: 100vh;
+  background-color: #333;
+  z-index: 999;
+  transition: all 0.5s ease-in-out;
+}
+.nav-active {
+  left: 0;
+}
+#kaydir a {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+#kaydir {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#kaydir a {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  text-decoration: none;
+}
+#kaydir a:nth-child(1) {
+  animation: kaydirma 1.5s linear;
+}
+#kaydir a:nth-child(2) {
+  animation: kaydirma 2s linear;
+}
+#kaydir a:nth-child(3) {
+  animation: kaydirma 2.5s linear;
+}
+#kaydir a:nth-child(4) {
+  animation: kaydirma 3s linear;
+}
+@keyframes kaydirma {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 50;
+  }
+}
+.popup {
+  position: fixed;
+  z-index: 1;
+  padding: 20px;
+  background-color: #000;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 30%;
+  height: 30vh;
+}
+
+.popup p {
+  text-align: center;
+}
+
+.popup button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: #0077cc;
+  color: #ffffff;
+  cursor: pointer;
+  width: 45%;
+  border-radius: 20px;
+  position: relative;
+  top: 60%;
+}
+
+.popup button:hover {
+  background-color: #0066b3;
+}
+
+.button {
+  text-decoration: none;
+  font: 24px/1em "Droid Sans", sans-serif;
+  font-weight: bold;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0.5em 0.6em 0.4em 0.6em;
+  margin: 0.5em;
+  display: inline-block;
+  position: relative;
+  left: 25%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+  width: 40%;
+}
+.button.green {
+  color: hsl(88, 70%, 30%) !important;
+  background-color: hsl(88, 70%, 60%);
+  -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em 0.3em,
+    inset rgba(0, 0, 0, 0.15) 0 -0.1em 0.3em,
+    /* inner shadow */ hsl(88, 70%, 40%) 0 0.1em 3px,
+    hsl(88, 70%, 30%) 0 0.3em 1px,
+    /* color border */ rgba(0, 0, 0, 0.2) 0 0.5em 5px; /* drop shadow */
+  -moz-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em 0.3em,
+    inset rgba(0, 0, 0, 0.15) 0 -0.1em 0.3em,
+    /* inner shadow */ hsl(88, 70%, 40%) 0 0.1em 3px,
+    hsl(88, 70%, 30%) 0 0.3em 1px,
+    /* color border */ rgba(0, 0, 0, 0.2) 0 0.5em 5px; /* drop shadow */
+  box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em 0.3em,
+    inset rgba(0, 0, 0, 0.15) 0 -0.1em 0.3em,
+    /* inner shadow */ hsl(88, 70%, 40%) 0 0.1em 3px,
+    hsl(88, 70%, 30%) 0 0.3em 1px,
+    /* color border */ rgba(0, 0, 0, 0.2) 0 0.5em 5px; /* drop shadow */
+}
+.button.green:hover {
+  background-color: hsl(88, 70%, 75%);
+}
